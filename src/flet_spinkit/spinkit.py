@@ -1,8 +1,8 @@
 from enum import Enum
 from typing import Any, Optional
 
-from flet_core.constrained_control import ConstrainedControl
-from flet_core.control import OptionalNumber
+from flet.core.constrained_control import ConstrainedControl
+from flet.core.control import OptionalNumber
 
 
 class SpinkitType(Enum):
