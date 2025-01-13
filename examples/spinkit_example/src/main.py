@@ -11,8 +11,8 @@ def main(page: ft.Page):
             [
                 ft.Container(height=200, width=200, bgcolor=ft.colors.BLUE_100),
                 Spinkit(
-                    opacity=0.5,
-                    tooltip="Spinkit tooltip",
+                    #opacity=0.5,
+                    #tooltip="Spinkit tooltip",
                     top=0,
                     left=0,
                     color=ft.colors.PURPLE,
