@@ -3,6 +3,7 @@ from typing import Any, Optional
 
 from flet.core.constrained_control import ConstrainedControl
 from flet.core.control import OptionalNumber
+from flet.core.types import ColorEnums, ColorValue
 
 
 class SpinkitType(Enum):
@@ -57,14 +58,24 @@ class Spinkit(ConstrainedControl):
     def _get_control_name(self):
         return "spinkit"
 
+    # # color
+    # @property
+    # def color(self):
+    #     return self._get_attr("color")
+
+    # @color.setter
+    # def color(self, value):
+    #     self._set_attr("color", value)
+
     # color
     @property
-    def color(self):
-        return self._get_attr("color")
+    def color(self) -> Optional[ColorValue]:
+        return self.__color
 
     @color.setter
-    def color(self, value):
-        self._set_attr("color", value)
+    def color(self, value: Optional[ColorValue]):
+        self.__color = value
+        self._set_enum_attr("color", value, ColorEnums)
 
     # size
     @property
