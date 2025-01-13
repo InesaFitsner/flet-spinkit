@@ -58,15 +58,6 @@ class Spinkit(ConstrainedControl):
     def _get_control_name(self):
         return "spinkit"
 
-    # # color
-    # @property
-    # def color(self):
-    #     return self._get_attr("color")
-
-    # @color.setter
-    # def color(self, value):
-    #     self._set_attr("color", value)
-
     # color
     @property
     def color(self) -> Optional[ColorValue]:

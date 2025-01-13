@@ -38,7 +38,6 @@ class SpinkitControl extends StatelessWidget {
           size: size ?? 50,
         );
     }
-    //spinkitControl = SpinKitRotatingCircle(color: color);
 
     return constrainedControl(context, spinkitControl, parent, control);
   }
